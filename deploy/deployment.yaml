@@ -27,7 +27,7 @@ spec:
           valueFrom:
             secretKeyRef:
               key: mysql-password
-              name: mysql-secrets
+              name: mysql-secret
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
         imagePullPolicy: Always
         name: wordpress
